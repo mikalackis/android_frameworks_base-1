@@ -7902,6 +7902,16 @@ public final class ActivityManagerService extends ActivityManagerNative
         public Object getAMSLock() {
             return ActivityManagerService.this;
         }
+
+        @Override
+        public Context getContext() {
+            return mContext;
+        }
+
+        @Override
+        public void removeTasksByPackageNameLocked(String packageName, int userId) {
+            ActivityManagerService.this.removeTasksByPackageNameLocked(packageName, userId);
+        }
     }
 
     /**
