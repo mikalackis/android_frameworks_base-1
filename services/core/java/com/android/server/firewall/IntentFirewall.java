@@ -49,6 +49,7 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
+import android.util.Log;
 
 import cyanogenmod.platform.Manifest;
 import android.app.ActivityManagerNative;
